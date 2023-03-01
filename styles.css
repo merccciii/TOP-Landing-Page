@@ -2,11 +2,16 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    margin: auto;
-    max-width:none;
-    background-color:#1F2937;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+img {
+    max-width: 65%; 
+   
 }
 
 a {
@@ -24,44 +29,79 @@ h1 {
     color: #f9faf8;
 }
 
+h2 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 800px;
+    color: #1f2937;
+}
+
+.navlinks,
+.herosubtext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
 .herotext {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
 }
 
-.navlinks, .herosubtext {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
-.navbar, 
-.navlinks {
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
-    justify-content: space-around;
-}
-
-.navlinks {
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.intro{
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: auto;
+    padding-bottom: 10px;
+    background-color: #1F2937;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    gap: 30px;
+}
+
+.herobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex: 1;
+    padding: 0 575px;
+    background-color: #1F2937;
+}
+
+.herobox button {
+    border: 0 none #e5e7eb;
+    border-radius: 7px;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 20px;
+    flex: 1 1 auto;
+}
+
+.introtext {
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimage {
+    margin: 10px;
+    flex-shrink: 0;
+    
+}
+
+.introtext {
+    align-items: flex-start;
+    flex: 1 1 0;
+    padding-right: 30px;
 }
